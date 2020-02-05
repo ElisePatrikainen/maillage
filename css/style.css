@@ -7,9 +7,18 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 1em 0;
+}
+
+.gradient-background {
     background: rgb(240,128,128);
     background: linear-gradient(90deg, rgba(240,128,128,1) 0%, rgba(240,128,128,0.1913807759431898) 100%);
     background: linear-gradient(90deg, rgba(248, 248, 248, 0.3) 0%, rgba(240,128,128,0.1) 100%);
+    color: rgb(139, 115, 115);
+}
+
+.nav-border {
+    height: 2px;
+    background:  linear-gradient(90deg, orange 0%, rgba(240,128,128,0.1913807759431898) 100%);
 }
 
 #navigation-1 {
@@ -18,20 +27,21 @@ nav {
 
 #nav-left {
     text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 1.3em;
 }
 
 #nav-right {
-    font-weight: bold;
-    color: rgb(139, 115, 115);
+    font-weight: lighter;
 }
 
-#navigation-1 span::after {
+#navigation-2 .nav-element::after {
     content: '|';
     margin: 1em;
     color: #ff8800;
 }
 
-#navigation-1 span:last-child::after {
+#navigation-2 .nav-element:last-child::after {
     content: '';
 }
 
@@ -39,15 +49,13 @@ nav {
     font-size: 1em;
 }
 
-#navigation-2 span {
-    padding: 0.3em 0;
-    font-weight: bold;
+#navigation-2 .nav-element span {
+    padding: 0.1em 0;
     color: #897373; 
-    margin: 1em;
 }
 
-.nav-2-selected {
-    border-bottom: 3px solid #ff8800;
+.nav-2-selected span {
+    border-bottom: 3px dotted #ff8800;
 }
 
 .background {
@@ -168,12 +176,19 @@ h1 {
 
 .title-image {
     height: 100%;
-    width: 90%;
+    width: 100%;
     object-fit: cover;
     object-position: right;
     position: relative;
-    border-radius: 10px;
     /* clip-path: polygon(100% 0%, 86% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
+}
+
+.image-left .title-image {
+    border-radius: 0 10px 10px 0;
+}
+
+.image-right .title-image {
+    border-radius: 10px 0 0 10px;
 }
 
 button {
@@ -217,7 +232,7 @@ ul {
     list-style: none;
 }
 
-li:before {
+.text li:before {
     font-family: "Font Awesome 5 Free";
     content: "\f061";
     margin-right: 20px;
@@ -226,4 +241,21 @@ li:before {
     padding-right: 3px;
     vertical-align: middle;
     font-weight: 900;
+ }
+
+ footer {
+     color: white;
+     display: flex;
+     justify-content: center;
+     padding: 3rem;
+ }
+
+ footer ul {
+    line-height: 1;
+    font-size: 1.5rem;
+    margin: 0 5rem;
+ }
+
+ .spacer-top {
+     margin-top: 5rem;
  }
