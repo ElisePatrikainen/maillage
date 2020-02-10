@@ -3,6 +3,11 @@ body {
     font-size: 2em;
 }
 
+#body {
+    position: relative;
+    overflow: hidden;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -60,14 +65,18 @@ nav {
 
 .background {
     position: fixed;
+    position: absolute;
     height: 100%;
     width: 100%;
     display: flex;
+    filter: brightness(150%);
 }
 
 .background img {
-    height: 100%;
-    filter: saturate(0.7);
+    /* height: 100%;
+    width: 50%; */
+    object-fit: cover;
+    /* filter: saturate(0.7); */
 }
 
 .wrapper {
