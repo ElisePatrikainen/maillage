@@ -1,6 +1,23 @@
 body {
-    /* font-family: georgia; */
+    font-family: 'Open Sans', sans-serif;
     font-size: 2em;
+}
+
+a {
+    margin: unset;
+    padding: unset;
+    text-decoration: unset;
+    color: unset;
+    font-size: unset;
+}
+
+a:hover {
+    color: unset;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #ff6a00ad;
 }
 
 #body {
@@ -34,6 +51,7 @@ nav {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-left: 1.3em;
+    font-weight: bold;
 }
 
 #nav-right {
@@ -210,6 +228,12 @@ button {
 button.btn-orange {
     color: white;
     background-color: #ff8800;
+    display: inline-block;
+}
+
+button a, button a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 #title-1, #title-3 {
@@ -268,3 +292,42 @@ ul {
  .spacer-top {
      margin-top: 5rem;
  }
+
+ /* charte.html */
+
+ .text-cont {
+     padding: 2em 5em;
+     text-align: justify;
+ }
+
+ .text-cont h1, .text-cont h2 {
+    color: #4d4d4d;
+   color: #933d00;
+}
+
+ .text-cont h1 {
+    opacity: 0.4;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-left: -1rem;
+    display: flex;
+ }
+
+ .text-cont h1::before {
+     content: "";
+     background-color: #933d00;
+     display: inline-block;
+     height: 4rem;
+     width: 4rem;
+     margin-top: 1rem;
+     margin-right: 2rem;
+     margin-left: 1rem;
+     opacity: 0.5;
+ }
+
+ .text-cont h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
