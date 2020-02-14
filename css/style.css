@@ -1,3 +1,19 @@
+:root {
+    /* Orange */
+    /*--landing-title-color: #ff6a00ad;*/
+    /*--landing-background-color: #a9454521;*/
+    /*--landing-background-pattern-color: rgb(253, 239, 239);*/
+    /*--landing-button-color: #ff8800;*/
+
+    /* Blue */
+    --landing-title-color: #204c;
+    --landing-background-color: rgba(19, 41, 201, 0.12);
+    --landing-background-pattern-color: rgb(239, 242, 253);
+    --landing-button-color: #004fb7;
+    --landing-nav-color: rgba(128, 134, 240, 0.1);
+    --landing-nav-border-color : #7272d9;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
@@ -17,7 +33,7 @@ a:hover {
 
 h1, h2 {
     font-family: 'Raleway', sans-serif;
-    color: #ff6a00ad;
+    color: var(--landing-title-color);
 }
 
 #body {
@@ -33,14 +49,13 @@ nav {
 
 .gradient-background {
     background: rgb(240,128,128);
-    background: linear-gradient(90deg, rgba(240,128,128,1) 0%, rgba(240,128,128,0.1913807759431898) 100%);
-    background: linear-gradient(90deg, rgba(248, 248, 248, 0.3) 0%, rgba(240,128,128,0.1) 100%);
+    background: linear-gradient(90deg, rgba(248, 248, 248, 0.3) 0%, var(--landing-nav-color) 100%);
     color: rgb(139, 115, 115);
 }
 
 .nav-border {
     height: 2px;
-    background:  linear-gradient(90deg, orange 0%, rgba(240,128,128,0.1913807759431898) 100%);
+    background: linear-gradient(90deg, var(--landing-nav-border-color) 0%, rgba(255, 255, 255, 0.2) 100%)
 }
 
 #navigation-1 {
@@ -61,7 +76,7 @@ nav {
 #navigation-2 .nav-element::after {
     content: '|';
     margin: 1em;
-    color: #ff8800;
+    color: var(--landing-button-color);
 }
 
 #navigation-2 .nav-element:last-child::after {
@@ -78,7 +93,7 @@ nav {
 }
 
 .nav-2-selected span {
-    border-bottom: 3px dotted #ff8800;
+    border-bottom: 3px dotted var(--landing-button-color);
 }
 
 .background {
@@ -111,8 +126,7 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #92545418;
-    background-color: #a9454521;
+    background-color: var(--landing-background-color);
     height: 100%;
     width: 30%;
     z-index: 0;
@@ -194,11 +208,9 @@ h1 {
     clip-path: inset(0 0 0 0 round 0 25% 0 25%); */
     height: 120%;
     width: 120%;
-    background-image:
-    radial-gradient(rgb(253, 239, 239) 9px, transparent 10px),
-    repeating-radial-gradient(rgba(173, 216, 230, 0.116) 0, rgba(173, 216, 230, 0.116) 4px, transparent 5px, transparent 20px, rgba(173, 216, 230, 0.116) 21px, rgba(173, 216, 230, 0.116) 25px, transparent 26px, transparent 50px);
     background-size: 30px 30px, 90px 90px;
     background-position: 0 0;
+    background-image: radial-gradient(var(--landing-background-pattern-color) 9px, transparent 10px);
 }
 
 .title-image {
@@ -227,7 +239,7 @@ button {
 
 button.btn-orange {
     color: white;
-    background-color: #ff8800;
+    background-color: var(--landing-button-color);
     display: inline-block;
 }
 
@@ -269,7 +281,7 @@ ul {
     font-family: "Font Awesome 5 Free";
     content: "\f061";
     margin-right: 20px;
-    color: #ff8800;
+    color: var(--landing-button-color);
     display: inline-block;
     padding-right: 3px;
     vertical-align: middle;
