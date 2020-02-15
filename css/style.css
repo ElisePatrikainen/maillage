@@ -163,6 +163,12 @@ h1 {
     letter-spacing: 1px;
 }
 
+#front-title {
+    position: absolute;
+    top: 0;
+    color: white !important;
+}
+
 /* .text-left, .image-left {
     margin-left: 5rem !important;
 }
@@ -170,6 +176,16 @@ h1 {
 .text-right, .image-right {
     margin-right: 5rem !important;
 } */
+
+#img-right-1-cont {
+    width: 95%;
+    position: relative;
+    margin: 1rem 0 1rem 5%;
+}
+
+#img-right-1-cont h1 {
+    color: white;
+}
 
 #img-right-1-cont, #img-right-3-cont {
     /* box-shadow: -10px 10px 0px 0px lightcoral */
@@ -193,8 +209,10 @@ h1 {
 }
 
 .img-cont {
-    height: 300px;
+    height: 400px;
     position: relative;
+    width: 90%;
+    margin-right: 0;
 }
 
 .img-shadow {
