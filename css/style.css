@@ -7,11 +7,15 @@
 
     /* Blue */
     --landing-title-color: #204c;
+    --landing-title-color: #5A5A5B;
     --landing-background-color: rgba(19, 41, 201, 0.12);
     --landing-background-pattern-color: rgb(239, 242, 253);
     --landing-button-color: #004fb7;
+    --landing-button-color: #217dc0;
     --landing-nav-color: rgba(128, 134, 240, 0.1);
     --landing-nav-border-color : #7272d9;
+    --landing-nav-border-color : #217dc0;
+    --logo-blue: #217dc0;
 }
 
 body {
@@ -44,7 +48,7 @@ h1, h2 {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 1em 0;
+    padding: 0.7em 0;
 }
 
 .gradient-background {
@@ -66,6 +70,17 @@ nav {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-left: 1.3em;
+    display: flex;
+    align-items: center;
+}
+
+#nav-left img {
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+#nav-left span {
+    color: var(--logo-blue);
     font-weight: bold;
 }
 
@@ -102,7 +117,7 @@ nav {
     height: 100%;
     width: 100%;
     display: flex;
-    filter: brightness(150%);
+    opacity: 0.2;
 }
 
 .background img {
