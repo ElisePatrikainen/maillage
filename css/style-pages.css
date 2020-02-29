@@ -1,0 +1,119 @@
+:root {
+    --colored-background: #f6f6fc;
+    --logo-blue: #217dc0;
+    --test : #e9e9ff;
+    --titles-main-color: #727b8c;
+    --titles-second-color: #475bfb;
+}
+
+body {
+    background-color: var(--colored-background);
+}
+
+nav {
+    background-color: white;
+}
+
+#main {
+    width: 80%;
+    margin: auto;
+    box-shadow: blanchedalmond;
+}
+
+.with-background {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.text {
+    padding: 3rem;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    color: var(--titles-main-color);
+    margin-bottom: 3rem;
+}
+
+h1::after, h2::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 50px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--titles-second-color);
+}
+
+.section {
+    margin-top: 4rem;
+    padding: 3rem;
+}
+
+.with-colored-background {
+    background-color: var(--test);
+}
+
+.cards {
+    margin: 6rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: white;
+    padding: 1rem 2rem;
+    width: 80%;
+    max-width: 400px;
+}
+
+.card .title {
+    display: flex;
+}
+
+.card h3 {
+    margin-left: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card img {
+    height: 7rem;
+    width: 7rem;
+    margin-top: -4rem;
+    border-radius: 50%;
+}
+
+.card p {
+    font-weight: 400;
+    color: grey;
+    display: block;
+}
+
+button {
+    display: block;
+    margin: auto;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: var(--titles-second-color) !important;
+    font-size: 12px;
+}
+
+
+@media (min-width: 800px) {
+
+    .cards {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .card {
+        width: 25%;
+    }
+}

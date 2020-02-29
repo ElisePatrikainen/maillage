@@ -111,6 +111,14 @@ nav {
     border-bottom: 3px dotted var(--landing-button-color);
 }
 
+.section {
+    position: relative;
+}
+
+.section h1 {
+    text-align: center;
+}
+
 .background {
     position: fixed;
     position: absolute;
