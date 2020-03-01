@@ -21,8 +21,9 @@ body {
     height: 100%;
 }
 
-nav, #main {
+nav, #main, footer {
     position: relative;
+    z-index: 1;
 }
 
 nav {
@@ -195,4 +196,28 @@ nav .logo {
         width: 29%;
     }
 
+}
+
+
+footer {
+    display: flex;
+    border-top: 2px solid var(--nav-color);
+    margin-top: 4rem;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+@media (min-width: 800px) {
+    footer {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    footer ul {
+        flex-direction: row;
+    }
 }
