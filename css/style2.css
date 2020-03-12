@@ -87,6 +87,7 @@ nav .logo {
 
     #large-nav-menu span {
         font-size: 1rem;
+        font-weight: bold;
     }
 
     #large-nav-menu #nav-home {
@@ -109,27 +110,42 @@ nav .logo {
 
 .section {
     position: relative;
+    padding-bottom: 3rem;
 }
 
 .section h1 {
     text-align: center;
+    padding: 2rem auto;
 }
 
 .section button {
-    background-color: gray;
-
+    background-color: #adadad;
+    border-radius: 20px;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    right: 0;
+    margin: 3rem 30% 1rem auto;
+    display: block;
+    transform: translateX(65%);
 }
 
 /* section 1 */
 
-#section-1 img {
+.with-large-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.with-large-image img {
     height: 10rem;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-#section-1 .text {
+.with-large-image .text {
     color: #788db6;
     margin: 1rem;
     font-family: 'Open Sans', sans-serif;
@@ -138,28 +154,35 @@ nav .logo {
 
 @media (min-width: 600px) {
 
-    #section-1 {
-        height: 20rem;
+    .with-large-image {
+        height: 30rem;
     }
 
-    #section-1 img {
+    .with-large-image img {
         position: absolute;
         height: 100%;
     }
 
-    #section-1 .text {
+    .with-large-image .text {
         color: white;
-        margin-left: 60%;
         position: relative;
         height: 100%;
         justify-content: center;
-        margin: auto 5% auto 50%;
+        font-size: 1.5rem;
         display: flex;
         flex-direction: column;
     }
-    
-    #section-1 .text div:first-child {
+
+    .with-large-image .text div:first-child {
         margin-top: -30px;
+    }
+
+    #section-1 .text {
+        margin: auto 5% auto 50%;
+    }
+
+    #section-3 .text {
+        margin: auto 5% auto 10%;
     }
 
 }
@@ -175,14 +198,17 @@ nav .logo {
 }
 
 #section-2-images img {
-    height: 10rem;
+    height: 13rem;
     object-fit: cover;
+    width: 100%;
 }
 
 .image-cont .text {
     font-size: 1rem;
     color: var(--nav-color);
     text-align: center;
+    margin: 1rem 0;
+    font-weight: bold;
 }
 
 @media (min-width: 600px) {
@@ -201,7 +227,7 @@ nav .logo {
 
 footer {
     display: flex;
-    border-top: 2px solid var(--nav-color);
+    border-top: grey solid;
     margin-top: 4rem;
     line-height: 1.5;
     padding: 1rem;
@@ -219,5 +245,17 @@ footer ul {
 
     footer ul {
         flex-direction: row;
+        width: 28%;
+        padding-left: 2%;
     }
+}
+
+/* last modifs */
+
+#top-cont {
+    position: relative;
+    font-family: 'Open-sans', sans-serif;
+    width: 90%;
+    margin: auto;
+    border-left: #0000004a solid;
 }
