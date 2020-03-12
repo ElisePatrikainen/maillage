@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f767e563-caf7-4bad-bfdd-a88454f1c00b" name="Default Changelist" comment="">
+    <list default="true" id="f767e563-caf7-4bad-bfdd-a88454f1c00b" name="Default Changelist" comment="front-page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -26,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="473">
+              <caret line="248" column="25" lean-forward="true" selection-start-line="248" selection-start-column="25" selection-end-line="248" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -188,7 +188,7 @@
       <workItem from="1581683194284" duration="639000" />
       <workItem from="1581700401402" duration="2300000" />
       <workItem from="1583863130195" duration="1210000" />
-      <workItem from="1584035434803" duration="4517000" />
+      <workItem from="1584035434803" duration="4903000" />
     </task>
     <task id="LOCAL-00001" summary="icons + patterns">
       <created>1573756660632</created>
@@ -201,11 +201,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18255000" />
+    <option name="totallyTimeSpent" value="18641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-1086" width="2208" height="1208" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09488372" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -233,7 +232,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="icons + patterns" />
-    <option name="LAST_COMMIT_MESSAGE" value="icons + patterns" />
+    <MESSAGE value="front-page" />
+    <option name="LAST_COMMIT_MESSAGE" value="front-page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/images/background1.jpg" />
@@ -290,8 +290,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="473">
+          <caret line="248" column="25" lean-forward="true" selection-start-line="248" selection-start-column="25" selection-end-line="248" selection-end-column="25" />
         </state>
       </provider>
     </entry>
